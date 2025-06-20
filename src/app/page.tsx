@@ -25,7 +25,7 @@ export default function Home() {
   return (
     <div className="max-w-3xl mx-auto p-6 font-sans">
       <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">
-        JSON to TypeScript Converter
+        JSON to TypeScript Converters
       </h1>
       <div className="flex flex-col gap-4">
         <textarea
