@@ -7,16 +7,12 @@ on:
     branches:
       - main
     paths:
-      - '01-simple-blog/**'  
-
+      - '**'  # Trigger on changes to any file in the repository
 jobs:
   Deploy-Production:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: 01-simple-blog
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4  # Updated to v4 for better reliability
 
       - name: Install Vercel CLI
         run: npm install --global vercel@latest
